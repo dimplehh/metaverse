@@ -13,13 +13,16 @@ public class MaxstSceneManager : MonoBehaviour
 	private VPSStudioController vPSStudioController = null;
 
 	public List<GameObject> disableObjects = new List<GameObject>();
-	public GameObject rootTrackable;
 	public List<GameObject> occlusionObjects = new List<GameObject>();
+	private List<VPSTrackable> vPSTrackablesList = new List<VPSTrackable>();
 
 	public Material buildingMaterial;
 	public Material runtimeBuildingMaterial;
 
 	public GameObject maxstLogObject;
+
+	public bool isOcclusion = true;
+	private string currentLocalizerLocation = "";
 
 	private string serverName = "";
 
@@ -65,9 +68,14 @@ public class MaxstSceneManager : MonoBehaviour
 			return;
 		}
 
-		if(rootTrackable == null)
-        {
-			Debug.LogError("You need to add RootTrackable.");
+		VPSTrackable[] vPSTrackables = FindObjectsOfType<VPSTrackable>(true);
+		if (vPSTrackables != null)
+		{
+			vPSTrackablesList.AddRange(vPSTrackables);
+		}
+		else
+		{
+			Debug.LogError("You need to add VPSTrackables.");
 		}
 
 		foreach (GameObject eachObject in disableObjects)
@@ -81,18 +89,21 @@ public class MaxstSceneManager : MonoBehaviour
 
 	void Start()
 	{
-		foreach (GameObject eachGameObject in occlusionObjects)
+		if (isOcclusion)
 		{
-			if (eachGameObject == null)
+			foreach (GameObject eachGameObject in occlusionObjects)
 			{
-				continue;
-			}
+				if (eachGameObject == null)
+				{
+					continue;
+				}
 
-			Renderer[] cullingRenderer = eachGameObject.GetComponentsInChildren<Renderer>();
-			foreach (Renderer eachRenderer in cullingRenderer)
-			{
-				eachRenderer.material.renderQueue = 1900;
-				eachRenderer.material = runtimeBuildingMaterial;
+				Renderer[] cullingRenderer = eachGameObject.GetComponentsInChildren<Renderer>();
+				foreach (Renderer eachRenderer in cullingRenderer)
+				{
+					eachRenderer.material.renderQueue = 1900;
+					eachRenderer.material = runtimeBuildingMaterial;
+				}
 			}
 		}
 
@@ -131,33 +142,54 @@ public class MaxstSceneManager : MonoBehaviour
 		TrackerManager.GetInstance().UpdateFrame();
 
 		ARFrame arFrame = TrackerManager.GetInstance().GetARFrame();
-		
+
 		TrackedImage trackedImage = arFrame.GetTrackedImage();
 
+		if (trackedImage.IsTextureId())
+		{
+			IntPtr[] cameraTextureIds = trackedImage.GetTextureIds();
+			cameraBackgroundBehaviour.UpdateCameraBackgroundImage(cameraTextureIds);
+		}
+		else
+		{
+			cameraBackgroundBehaviour.UpdateCameraBackgroundImage(trackedImage);
+		}
 
-        if (trackedImage.IsTextureId())
-        {
-            IntPtr[] cameraTextureIds = trackedImage.GetTextureIds();
-            cameraBackgroundBehaviour.UpdateCameraBackgroundImage(cameraTextureIds);
-        }
-        else
-        {
-            cameraBackgroundBehaviour.UpdateCameraBackgroundImage(trackedImage);
-        }
-
-		if(arFrame.GetARLocationRecognitionState() == ARLocationRecognitionState.ARLocationRecognitionStateNormal)
-        {
+		if (arFrame.GetARLocationRecognitionState() == ARLocationRecognitionState.ARLocationRecognitionStateNormal)
+		{
 			Matrix4x4 targetPose = arFrame.GetTransform();
 
 			arCamera.transform.position = MatrixUtils.PositionFromMatrix(targetPose);
 			arCamera.transform.rotation = MatrixUtils.QuaternionFromMatrix(targetPose);
 			arCamera.transform.localScale = MatrixUtils.ScaleFromMatrix(targetPose);
 
-			rootTrackable.SetActive(true);
+			string localizerLocation = arFrame.GetARLocalizerLocation();
+
+			if (currentLocalizerLocation != localizerLocation)
+			{
+				currentLocalizerLocation = localizerLocation;
+				foreach (VPSTrackable eachTrackable in vPSTrackablesList)
+				{
+					bool isLocationInclude = false;
+					foreach (string eachLocation in eachTrackable.localizerLocation)
+					{
+						if (currentLocalizerLocation == eachLocation)
+						{
+							isLocationInclude = true;
+							break;
+						}
+					}
+					eachTrackable.gameObject.SetActive(isLocationInclude);
+				}
+			}
 		}
 		else
-        {
-			rootTrackable.SetActive(false);
+		{
+			foreach (VPSTrackable eachTrackable in vPSTrackablesList)
+			{
+				eachTrackable.gameObject.SetActive(false);
+			}
+			currentLocalizerLocation = "";
 		}
 	}
 
@@ -209,8 +241,28 @@ public class MaxstSceneManager : MonoBehaviour
 
 	public void OnClickNavigation()
     {
-		NavigationController navigationController = vPSStudioController.GetComponent<NavigationController>();
-		navigationController.MakePath(arCamera.transform.position, new Vector3(77.975977f, 0, 71.859565f), serverName);
+		if(currentLocalizerLocation != null)
+        {
+			GameObject trackingObject = null;
+			foreach (VPSTrackable eachTrackable in vPSTrackablesList)
+			{
+				foreach (string eachLocation in eachTrackable.localizerLocation)
+				{
+					if (currentLocalizerLocation == eachLocation)
+					{
+						trackingObject = eachTrackable.gameObject;
+						break;
+					}
+				}
+			}
+
+			if(trackingObject != null)
+            {
+				NavigationController navigationController = GetComponent<NavigationController>();
+				navigationController.rootTrackable = trackingObject;
+				navigationController.MakePath(arCamera.transform.position, new Vector3(77.975977f, 0, 71.859565f), serverName);
+			}
+		}
     }
 
 	void FixedUpdate()
@@ -218,7 +270,6 @@ public class MaxstSceneManager : MonoBehaviour
 		if (Input.GetMouseButtonUp(0))
 		{
 			AttachLogo();
-			
 		}
 	}
 

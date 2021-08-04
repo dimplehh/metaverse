@@ -111,18 +111,18 @@ public class VPSStudioController : MonoBehaviour
         referenceCameraController.Clear();
         referenceCameraController.MakeCameras();
 
-        if (rootTrackable == null)
-        {
-            Debug.LogError("Can't find TrackingObject. You need to add TrackingObject in VPStudioController.");
-            return;
-        }
+        //if (rootTrackable == null)
+        //{
+        //    Debug.LogError("Can't find TrackingObject. You need to add TrackingObject in VPStudioController.");
+        //    return;
+        //}
 
-        ClearMesh();
+        //ClearMesh();
 
-        EditorCoroutineUtility.StartCoroutine(LoadAssetResource(vpsPath, vpsName, rootTrackable), this);
+        EditorCoroutineUtility.StartCoroutine(LoadAssetResource(vpsPath, vpsName), this);
     }
 
-    public IEnumerator LoadAssetResource(string path, string vpsName, GameObject attachObject)
+    public IEnumerator LoadAssetResource(string path, string vpsName)
     {
         string destinationfolderPath = Application.streamingAssetsPath + "/../MaxstAR/Contents/" + vpsName;
         if (!Directory.Exists(destinationfolderPath))
@@ -130,25 +130,32 @@ public class VPSStudioController : MonoBehaviour
             Directory.CreateDirectory(destinationfolderPath);
         }
 
-        string fbx_url = path + "/" + vpsName + ".fbx";
-        string fbx_url_dest = destinationfolderPath + "/" + vpsName + ".fbx";
-        string fbxmeta_url = path + "/" + vpsName + ".fbx.meta";
-        string fbxmeta_url_dest = destinationfolderPath + "/" + vpsName + ".fbx.meta";
-        string prefab_url = path + "/" + vpsName + ".prefab";
+        string fbx_url = path + Path.DirectorySeparatorChar + vpsName + ".fbx";
+        string fbx_url_dest = destinationfolderPath + Path.DirectorySeparatorChar + vpsName + ".fbx";
+        string fbxmeta_url = path + Path.DirectorySeparatorChar + vpsName + ".fbx.meta";
+        string fbxmeta_url_dest = destinationfolderPath + Path.DirectorySeparatorChar + vpsName + ".fbx.meta";
+        string prefab_url = path + Path.DirectorySeparatorChar + vpsName + ".prefab";
         string prefab_url_dest = destinationfolderPath + "/" + vpsName + ".prefab";
-        string prefab_meta_url = path + "/" + vpsName + ".prefab.meta";
-        string prefab_meta_url_dest = destinationfolderPath + "/" + vpsName + ".prefab.meta";
+        string prefab_meta_url = path + Path.DirectorySeparatorChar + vpsName + ".prefab.meta";
+        string prefab_meta_url_dest = destinationfolderPath + Path.DirectorySeparatorChar + vpsName + ".prefab.meta";
+        string trackable_meta_url = path + Path.DirectorySeparatorChar + "Trackable.prefab.meta";
+        string trackable_meta_url_dest = destinationfolderPath + Path.DirectorySeparatorChar + "Trackable.prefab.meta";
+        string trackable_url = path + Path.DirectorySeparatorChar + "Trackable.prefab";
+        string trackable_url_dest = destinationfolderPath + Path.DirectorySeparatorChar + "Trackable.prefab";
         System.IO.File.Copy(fbx_url, fbx_url_dest, true);
         System.IO.File.Copy(fbxmeta_url, fbxmeta_url_dest, true);
         System.IO.File.Copy(prefab_url, prefab_url_dest, true);
         System.IO.File.Copy(prefab_meta_url, prefab_meta_url_dest, true);
+        System.IO.File.Copy(trackable_meta_url, trackable_meta_url_dest, true);
+        System.IO.File.Copy(trackable_url, trackable_url_dest, true);
 
         yield return new WaitForEndOfFrame();
 
         AssetDatabase.Refresh();
 
-        meshObject = PrefabUtility.LoadPrefabContents(destinationfolderPath + "/" + vpsName + ".prefab");
-        meshObject.transform.parent = attachObject.transform;
+        GameObject local_meshObject = PrefabUtility.LoadPrefabContents(destinationfolderPath + Path.DirectorySeparatorChar + "Trackable.prefab");
+        meshObject = Instantiate(local_meshObject);
+        //meshObject.transform.parent = gameObject.transform.root;
     }
 
     public void ClearMesh()
