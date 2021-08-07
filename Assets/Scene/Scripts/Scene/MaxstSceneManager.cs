@@ -129,12 +129,6 @@ public class MaxstSceneManager : MonoBehaviour
 		}
 		
 		TrackerManager.GetInstance().StartTracker();
-
-		if (serverName != "")
-		{
-			string vpsquery = "{\"vps_server\":\"" + serverName + "\"}";
-			TrackerManager.GetInstance().AddTrackerData(vpsquery);
-		}
 	}
 
 	void Update()
@@ -224,11 +218,6 @@ public class MaxstSceneManager : MonoBehaviour
 			}
 
 			TrackerManager.GetInstance().StartTracker();
-			if (serverName != "")
-			{
-				string vpsquery = "{\"vps_server\":\"" + serverName + "\"}";
-				TrackerManager.GetInstance().AddTrackerData(vpsquery);
-			}
 		}
 	}
 
@@ -259,8 +248,11 @@ public class MaxstSceneManager : MonoBehaviour
 			if(trackingObject != null)
             {
 				NavigationController navigationController = GetComponent<NavigationController>();
-				navigationController.rootTrackable = trackingObject;
-				navigationController.MakePath(arCamera.transform.position, new Vector3(77.975977f, 0, 71.859565f), serverName);
+
+				navigationController.MakePath(currentLocalizerLocation, arCamera.transform.position, "landmark_yangjaestation_b1", new Vector3(77.975977f, 0, 71.859565f), vPSTrackablesList.ToArray(),
+				() => {
+					Debug.Log("No Path");
+				});
 			}
 		}
     }

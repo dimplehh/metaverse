@@ -307,6 +307,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 529429954}
   m_CullTransparentMesh: 1
+--- !u!1001 &588825837
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1366233342383141021, guid: 2d12b68b5486c4f28999237593033359,
+        type: 3}
+      propertyPath: m_Name
+      value: VPS_LOGO
+      objectReference: {fileID: 0}
+    - target: {fileID: 1854925941566532135, guid: 2d12b68b5486c4f28999237593033359,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1854925941566532135, guid: 2d12b68b5486c4f28999237593033359,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1854925941566532135, guid: 2d12b68b5486c4f28999237593033359,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1854925941566532135, guid: 2d12b68b5486c4f28999237593033359,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1854925941566532135, guid: 2d12b68b5486c4f28999237593033359,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1854925941566532135, guid: 2d12b68b5486c4f28999237593033359,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1854925941566532135, guid: 2d12b68b5486c4f28999237593033359,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1854925941566532135, guid: 2d12b68b5486c4f28999237593033359,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1854925941566532135, guid: 2d12b68b5486c4f28999237593033359,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1854925941566532135, guid: 2d12b68b5486c4f28999237593033359,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1854925941566532135, guid: 2d12b68b5486c4f28999237593033359,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2d12b68b5486c4f28999237593033359, type: 3}
+--- !u!1 &588825838 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1366233342383141021, guid: 2d12b68b5486c4f28999237593033359,
+    type: 3}
+  m_PrefabInstance: {fileID: 588825837}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &971011286
 GameObject:
   m_ObjectHideFlags: 0
@@ -505,12 +580,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   disableObjects:
   - {fileID: 1384829797}
-  occlusionObjects:
-  - {fileID: 0}
+  occlusionObjects: []
   buildingMaterial: {fileID: 2100000, guid: 10c88969f8affaa4aa27ca5ff2336e69, type: 2}
   runtimeBuildingMaterial: {fileID: 2100000, guid: 907dfd33bf55b7b41bc29497cd8b4822,
     type: 2}
-  maxstLogObject: {fileID: 0}
+  maxstLogObject: {fileID: 588825838}
   isOcclusion: 1
 --- !u!4 &1336363563
 Transform:
@@ -538,10 +612,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c789bd798807943178096a05e8b91e46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positionDistance: 3
+  arrowPositionDistance: 3
+  arrowVisibleDistance: 20
+  arrowPathHeight: -0.5
   arrowPrefab: {fileID: 8559583761412443589, guid: 3dba4ac2f40cf4706863d68371f4d498,
     type: 3}
-  rootTrackable: {fileID: 0}
 --- !u!1001 &1384829796
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -557,7 +632,7 @@ PrefabInstance:
     - target: {fileID: 7068059249072869786, guid: 9486b87e123b44ce5875be626132b942,
         type: 3}
       propertyPath: vpsPath
-      value: /Users/acper/work/VPS_Studio/VPSSDKUnity_github/Assets/../../VPSData/VPSMap/yangjae_indoor
+      value: /Users/acper/work/VPS_Studio/VPSSDKUnity_github/Assets/../../VPSData/VPSMap/coex_indoor_b1
       objectReference: {fileID: 0}
     - target: {fileID: 7068059249072869786, guid: 9486b87e123b44ce5875be626132b942,
         type: 3}
@@ -567,7 +642,7 @@ PrefabInstance:
     - target: {fileID: 7068059249072869786, guid: 9486b87e123b44ce5875be626132b942,
         type: 3}
       propertyPath: selectIndex
-      value: 19
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7068059249072869786, guid: 9486b87e123b44ce5875be626132b942,
         type: 3}
@@ -577,17 +652,17 @@ PrefabInstance:
     - target: {fileID: 7068059249072869786, guid: 9486b87e123b44ce5875be626132b942,
         type: 3}
       propertyPath: vpsServerName
-      value: yangjae_indoor
+      value: coex_indoor_b1
       objectReference: {fileID: 0}
     - target: {fileID: 7068059249072869786, guid: 9486b87e123b44ce5875be626132b942,
         type: 3}
       propertyPath: vpsSimulatePath
-      value: /Users/acper/work/VPS_Studio/VPSSDKUnity_github/Assets/../../VPSData/VPSSimulationData/yangjae_indoor/yangjae_indoor_spot_simulation_1
+      value: /Users/acper/work/VPS_Studio/VPSSDKUnity_github/Assets/../../VPSData/VPSSimulationData/coex_indoor_b1/coex_indoor_starfield_sim_port_00001_210608
       objectReference: {fileID: 0}
     - target: {fileID: 7068059249072869786, guid: 9486b87e123b44ce5875be626132b942,
         type: 3}
       propertyPath: simulate_selectIndex
-      value: 0
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 7068059249072869789, guid: 9486b87e123b44ce5875be626132b942,
         type: 3}
