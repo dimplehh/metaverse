@@ -585,7 +585,8 @@ MonoBehaviour:
   runtimeBuildingMaterial: {fileID: 2100000, guid: 907dfd33bf55b7b41bc29497cd8b4822,
     type: 2}
   maxstLogObject: {fileID: 588825838}
-  isOcclusion: 1
+  isOcclusion: 0
+  arContent: {fileID: 2028751565}
 --- !u!4 &1336363563
 Transform:
   m_ObjectHideFlags: 0
@@ -614,7 +615,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   arrowPositionDistance: 3
   arrowVisibleDistance: 20
-  arrowPathHeight: -0.5
+  arrowPathHeight: 0
   arrowPrefab: {fileID: 8559583761412443589, guid: 3dba4ac2f40cf4706863d68371f4d498,
     type: 3}
 --- !u!1001 &1384829796
@@ -632,7 +633,7 @@ PrefabInstance:
     - target: {fileID: 7068059249072869786, guid: 9486b87e123b44ce5875be626132b942,
         type: 3}
       propertyPath: vpsPath
-      value: /Users/acper/work/VPS_Studio/VPSSDKUnity_github/Assets/../../VPSData/VPSMap/coex_indoor_b1
+      value: /Users/acper/work/VPS_Studio/VPSSDKUnity_github/Assets/../../VPSData/VPSMap/pidata_indoor_f2
       objectReference: {fileID: 0}
     - target: {fileID: 7068059249072869786, guid: 9486b87e123b44ce5875be626132b942,
         type: 3}
@@ -642,7 +643,7 @@ PrefabInstance:
     - target: {fileID: 7068059249072869786, guid: 9486b87e123b44ce5875be626132b942,
         type: 3}
       propertyPath: selectIndex
-      value: 4
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 7068059249072869786, guid: 9486b87e123b44ce5875be626132b942,
         type: 3}
@@ -652,17 +653,17 @@ PrefabInstance:
     - target: {fileID: 7068059249072869786, guid: 9486b87e123b44ce5875be626132b942,
         type: 3}
       propertyPath: vpsServerName
-      value: coex_indoor_b1
+      value: pidata_indoor_f2
       objectReference: {fileID: 0}
     - target: {fileID: 7068059249072869786, guid: 9486b87e123b44ce5875be626132b942,
         type: 3}
       propertyPath: vpsSimulatePath
-      value: /Users/acper/work/VPS_Studio/VPSSDKUnity_github/Assets/../../VPSData/VPSSimulationData/coex_indoor_b1/coex_indoor_starfield_sim_port_00001_210608
+      value: /Users/acper/work/VPS_Studio/VPSSDKUnity_github/Assets/../../VPSData/VPSSimulationData/pidata_indoor_f2/2021_09_01_14_19_43_563
       objectReference: {fileID: 0}
     - target: {fileID: 7068059249072869786, guid: 9486b87e123b44ce5875be626132b942,
         type: 3}
       propertyPath: simulate_selectIndex
-      value: 30
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7068059249072869789, guid: 9486b87e123b44ce5875be626132b942,
         type: 3}
@@ -860,3 +861,33 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1805948729}
   m_CullTransparentMesh: 1
+--- !u!1 &2028751565
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2028751566}
+  m_Layer: 0
+  m_Name: ARContent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2028751566
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028751565}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

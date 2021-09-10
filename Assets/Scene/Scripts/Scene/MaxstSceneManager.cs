@@ -26,6 +26,8 @@ public class MaxstSceneManager : MonoBehaviour
 
 	private string serverName = "";
 
+	public GameObject arContent;
+
 	void Awake()
 	{
 		QualitySettings.vSyncCount = 0;
@@ -129,7 +131,7 @@ public class MaxstSceneManager : MonoBehaviour
 		}
 		
 		TrackerManager.GetInstance().StartTracker();
-	}
+    }
 
 	void Update()
 	{
@@ -158,6 +160,8 @@ public class MaxstSceneManager : MonoBehaviour
 			arCamera.transform.localScale = MatrixUtils.ScaleFromMatrix(targetPose);
 
 			string localizerLocation = arFrame.GetARLocalizerLocation();
+
+			Debug.Log(localizerLocation);
 
 			if (currentLocalizerLocation != localizerLocation)
 			{
@@ -230,8 +234,9 @@ public class MaxstSceneManager : MonoBehaviour
 
 	public void OnClickNavigation()
     {
-		if(currentLocalizerLocation != null)
-        {
+		string navigationLocation = "";
+		if (currentLocalizerLocation != null)
+		{
 			GameObject trackingObject = null;
 			foreach (VPSTrackable eachTrackable in vPSTrackablesList)
 			{
@@ -239,23 +244,24 @@ public class MaxstSceneManager : MonoBehaviour
 				{
 					if (currentLocalizerLocation == eachLocation)
 					{
+						navigationLocation = eachTrackable.navigationLocation;
 						trackingObject = eachTrackable.gameObject;
 						break;
 					}
 				}
 			}
 
-			if(trackingObject != null)
-            {
+			if (trackingObject != null)
+			{
 				NavigationController navigationController = GetComponent<NavigationController>();
 
-				navigationController.MakePath(currentLocalizerLocation, arCamera.transform.position, "landmark_yangjaestation_b1", new Vector3(77.975977f, 0, 71.859565f), vPSTrackablesList.ToArray(),
+				navigationController.MakePath(navigationLocation, arCamera.transform.position, "landmark_centralcity_f1", new Vector3(-48.353495f, 2.447647f, -53.145505f), arContent,
 				() => {
 					Debug.Log("No Path");
 				});
 			}
 		}
-    }
+	}
 
 	void FixedUpdate()
 	{
