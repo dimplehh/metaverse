@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="RuntimePermissions">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Assets/MaxstAR/Plugins/AndroidRuntimePermissions/Android/RuntimePermissions.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

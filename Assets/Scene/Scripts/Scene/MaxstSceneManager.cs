@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using maxstAR;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 using System.IO;
 using System;
 
@@ -14,12 +15,32 @@ public class MaxstSceneManager : MonoBehaviour
 
 	public List<GameObject> disableObjects = new List<GameObject>();
 	public List<GameObject> occlusionObjects = new List<GameObject>();
+	public List<GameObject> Stickers = new List<GameObject>();
 	private List<VPSTrackable> vPSTrackablesList = new List<VPSTrackable>();
+
+	public RaycastHit vHit;
+	public RectTransform btn1;
+	public GameObject btn1_go;
 
 	public Material buildingMaterial;
 	public Material runtimeBuildingMaterial;
 
 	public GameObject maxstLogObject;
+	public GameObject StickerPanel;
+	public GameObject PalettePanel;
+	public GameObject CustomPanel;
+	public GameObject button;
+	public GameObject button2;
+	public GameObject backButton;
+	public GameObject graffiButton;
+	public GameObject plus;
+	public GameObject graffi;
+	public Text text;
+	bool isOpacity;
+	bool isPanel;
+	bool isStick = false;
+	bool isPlus = false;
+	GameObject custom;
 
 	public bool isOcclusion = true;
 	private string currentLocalizerLocation = "";
@@ -91,6 +112,10 @@ public class MaxstSceneManager : MonoBehaviour
 
 	void Start()
 	{
+		isOpacity = true;
+		isPanel = true;
+		buildingMaterial.color = new Color(buildingMaterial.color.r, buildingMaterial.color.g, buildingMaterial.color.b, 0.01f);
+		//시작 시 buildingmaterial을 투명한 상태에서 시작.
 		if (isOcclusion)
 		{
 			foreach (GameObject eachGameObject in occlusionObjects)
@@ -262,26 +287,114 @@ public class MaxstSceneManager : MonoBehaviour
 			}
 		}
 	}
-
-	void FixedUpdate()
-	{
-		if (Input.GetMouseButtonUp(0))
-		{
-			AttachLogo();
+	public void OnClickPlusButton()
+    {
+		if (isPlus == true)
+        {
+			button.gameObject.SetActive(false);
+			button2.gameObject.SetActive(false);
+			isPlus = false;
+		}
+		else
+        {
+			button.gameObject.SetActive(true);
+			button2.gameObject.SetActive(true);
+			isPlus = true;
 		}
 	}
-
-	public void AttachLogo()
+	public void OnClickButton()//스티커 붙이기 버튼 클릭 시 
     {
-		Vector2 vTouchPos = Input.mousePosition;
+		StickerPanel.gameObject.SetActive(true);
+		button.gameObject.SetActive(false);
+		button2.gameObject.SetActive(false);
+		plus.gameObject.SetActive(false);
+		graffiButton.gameObject.SetActive(false);
+		buildingMaterial.color = new Color(buildingMaterial.color.r, buildingMaterial.color.g, buildingMaterial.color.b, 0.5f);
+		text.text = "스티커 꾸미기";
+	}
+	public void OnClickButton2()//그래피티 버튼 클릭 시 
+	{
+		text.text = "그래피티";
+		button.gameObject.SetActive(false);
+		button2.gameObject.SetActive(false);
+		plus.gameObject.SetActive(false);
+		graffi.gameObject.SetActive(true);
+		PalettePanel.gameObject.SetActive(true);
+		backButton.gameObject.SetActive(true);
+	}
+	public void OnClickButton3()//커스텀 버튼 클릭 시
+    {
+		button.gameObject.SetActive(false);
+		button2.gameObject.SetActive(false);
+		plus.gameObject.SetActive(false);
+		buildingMaterial.color = new Color(buildingMaterial.color.r, buildingMaterial.color.g, buildingMaterial.color.b, 0.5f);
+		text.text = "커스텀 만들기";
+		CustomPanel.gameObject.SetActive(true);
+	}
+    public void OnClickBackButton()//완료버튼 클릭 시
+    {
+		buildingMaterial.color = new Color(buildingMaterial.color.r, buildingMaterial.color.g, buildingMaterial.color.b, 0.01f);
+		text.text = "나만의 코엑스를 만들어보세요";
+		StickerPanel.gameObject.SetActive(false);
+		PalettePanel.gameObject.SetActive(false);
+		plus.gameObject.SetActive(true);
+		graffiButton.gameObject.SetActive(true);
+		graffi.gameObject.SetActive(false);
+		backButton.gameObject.SetActive(false);
+		btn1_go.gameObject.SetActive(false);
+		isStick = false;
+	}
 
-		Ray ray = Camera.main.ScreenPointToRay(vTouchPos);
+	public void Done()
+    {
+		custom = GameObject.Find("Customs");
+		isStick = true;
+		maxstLogObject = custom;
+		CustomPanel.gameObject.SetActive(false);
+		backButton.gameObject.SetActive(true);
+	}
 
-		RaycastHit vHit;
-		if (Physics.Raycast(ray.origin, ray.direction, out vHit))
-		{
-			maxstLogObject.transform.position = vHit.point;
-			maxstLogObject.transform.rotation = Quaternion.FromToRotation(Vector3.forward, vHit.normal) * Quaternion.Euler(-90.0f ,0.0f, 0.0f);
+	public void ChooseSticker()
+    {
+		GameObject clickObject = EventSystem.current.currentSelectedGameObject;
+		if (clickObject.name.Substring(0,3) == "stk")
+        {
+			isStick = true;
+			int index = int.Parse(clickObject.name.Substring(3, 1)) - 1;
+			maxstLogObject = Stickers[index];
+			StickerPanel.gameObject.SetActive(false);
+			backButton.gameObject.SetActive(true);
 		}
+    }
+	void FixedUpdate()
+	{
+		if(Input.GetMouseButtonUp(0) && !EventSystem.current.IsPointerOverGameObject())
+        {
+			Vector2 vTouchPos = Input.mousePosition;
+
+			Ray ray = Camera.main.ScreenPointToRay(vTouchPos);
+
+			if (Physics.Raycast(ray.origin, ray.direction, out vHit))
+            {
+				if (isStick == true)
+					AttachLogo(vHit);
+                if (isStick == false && vHit.collider.name.Substring(0, 3) == "skr")
+                {
+					Vector2 mousePos = Input.mousePosition;
+					btn1.position = mousePos;
+					btn1_go.gameObject.SetActive(true);
+				}
+			}
+        }
+	}
+
+		public void AttachLogo(RaycastHit vHit)//이것을 활용하여 스티커 붙일 수 있을 것.
+    {
+		maxstLogObject.transform.position = vHit.point;
+		if(maxstLogObject != custom)
+			maxstLogObject.transform.rotation = Quaternion.FromToRotation(Vector3.forward, vHit.normal) * Quaternion.Euler(-90.0f ,0.0f, 0.0f);
+		else
+			maxstLogObject.transform.rotation = Quaternion.FromToRotation(Vector3.forward, vHit.normal) * Quaternion.Euler(90.0f, 0.0f, 0.0f);
+		Instantiate(maxstLogObject, maxstLogObject.transform.position, maxstLogObject.transform.rotation);
 	}
 }

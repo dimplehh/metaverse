@@ -1,0 +1,1050 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.6f1 (338bb68529b2) revision 3378102'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19043.1288; Version 2009; 64bit' Language: 'ko' Physical Memory: 16118 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+D:\unity\2020.3.6f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/unity/VPSSDKUnity
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+54970
+Successfully changed project path to: D:/unity/VPSSDKUnity
+D:/unity/VPSSDKUnity
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 37.16 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.6f1 (338bb68529b2)
+[Subsystems] Discovering subsystems at path D:/unity/2020.3.6f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/unity/VPSSDKUnity/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) Iris(R) Plus Graphics (ID=0x8a52)
+    Vendor:   
+    VRAM:     8059 MB
+    Driver:   27.20.100.9510
+Initialize mono
+Mono path[0] = 'D:/unity/2020.3.6f1/Editor/Data/Managed'
+Mono path[1] = 'D:/unity/2020.3.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/unity/2020.3.6f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56436
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/unity/2020.3.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001177 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 31.76 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unable to find bridge dll in registry for Microsoft Visual Studio Tools for Unity for C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe
+Mono: successfully reloaded assembly
+- Completed reload, in  1.230 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003883 seconds.
+Begin MonoManager ReloadAssembly
+OnLevelWasLoaded was found on AdaptingEventSystemDragThreshold
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.29 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.943 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 0.44 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1299 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 68.8 MB.
+System memory in use after: 68.9 MB.
+
+Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 1735.
+Total: 2.479200 ms (FindLiveObjects: 0.189700 ms CreateObjectMapping: 0.052000 ms MarkObjects: 2.208900 ms  DeleteObjects: 0.026400 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Content/webview/WebView.prefab
+  artifactKey: Guid(bca0e2941f076b6419d2e1ae33140c64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Content/webview/WebView.prefab using Guid(bca0e2941f076b6419d2e1ae33140c64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f94dbc5dfa6c36fd2edd89a10d6a8fd') in 0.098459 seconds
+  Import took 0.102906 seconds .
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 6.13 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 41.9 MB.
+System memory in use after: 42.0 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 1735.
+Total: 2.818400 ms (FindLiveObjects: 0.179500 ms CreateObjectMapping: 0.067500 ms MarkObjects: 2.533900 ms  DeleteObjects: 0.035300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.218432 seconds.
+  path: Assets/hyunhee/custom/h2.png
+  artifactKey: Guid(d2b844a248a49c54e8c57df5808ad0dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/hyunhee/custom/h2.png using Guid(d2b844a248a49c54e8c57df5808ad0dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c5651a095b593897d5212a148a428fb') in 0.126685 seconds
+  Import took 0.167469 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.105131 seconds.
+  path: Assets/hyunhee/custom/h2.png
+  artifactKey: Guid(d2b844a248a49c54e8c57df5808ad0dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/hyunhee/custom/h2.png using Guid(d2b844a248a49c54e8c57df5808ad0dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c8d267c0576a8f04a7aa605530c6c40') in 0.009691 seconds
+  Import took 0.013584 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.054453 seconds.
+  path: Assets/hyunhee/custom/head_2.mat
+  artifactKey: Guid(b71c20994271d6748b8f14a1f134bf76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/hyunhee/custom/head_2.mat using Guid(b71c20994271d6748b8f14a1f134bf76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43eea827da8ab1156320f35434d077e9') in 0.108547 seconds
+  Import took 0.111362 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.360926 seconds.
+  path: Assets/hyunhee/custom/head_3.mat
+  artifactKey: Guid(87a6465015cfdbe42ac654a2a07b452a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/hyunhee/custom/head_3.mat using Guid(87a6465015cfdbe42ac654a2a07b452a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7113ca6a444ff8290d4cdbcf6c81a402') in 0.015020 seconds
+  Import took 0.019691 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.270115 seconds.
+  path: Assets/hyunhee/custom/New Material.mat
+  artifactKey: Guid(369f5d5a4a31e734fb52edc10c13e35e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/hyunhee/custom/New Material.mat using Guid(369f5d5a4a31e734fb52edc10c13e35e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9478b4173bcb732504ba07839f7d0dd2') in 0.014216 seconds
+  Import took 0.018589 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.667307 seconds.
+  path: Assets/hyunhee/custom/head_5.mat
+  artifactKey: Guid(6a830d21e2d94564a89905cfe7566909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/hyunhee/custom/head_5.mat using Guid(6a830d21e2d94564a89905cfe7566909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2206046f19fe9f3f83a3b9ccc3eb32f') in 0.012233 seconds
+  Import took 0.016580 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 92.173337 seconds.
+  path: Assets/hyunhee/custom/hair_1.mat
+  artifactKey: Guid(8243e922c1d4c60429596fb5141a09a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/hyunhee/custom/hair_1.mat using Guid(8243e922c1d4c60429596fb5141a09a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9fd4c93ac2e298a98221d1eab976be5') in 0.011234 seconds
+  Import took 0.021312 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002124 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.35 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.940 seconds
+Platform modules already initialized, skipping
+OnLevelWasLoaded was found on AdaptingEventSystemDragThreshold
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1280 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.0 MB.
+System memory in use after: 70.1 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 1781.
+Total: 3.878000 ms (FindLiveObjects: 0.238500 ms CreateObjectMapping: 0.112900 ms MarkObjects: 3.475700 ms  DeleteObjects: 0.049000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 1055.494009 seconds.
+  path: Assets/hyunhee/custom/hair_1.mat
+  artifactKey: Guid(8243e922c1d4c60429596fb5141a09a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/hyunhee/custom/hair_1.mat using Guid(8243e922c1d4c60429596fb5141a09a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40625f1496a625099cbcd9e39a3713ec') in 0.133769 seconds
+  Import took 0.138444 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000634 seconds.
+  path: Assets/hyunhee/custom/head_3.mat
+  artifactKey: Guid(87a6465015cfdbe42ac654a2a07b452a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/hyunhee/custom/head_3.mat using Guid(87a6465015cfdbe42ac654a2a07b452a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f80e125889da89eb04feb7815587d8bb') in 0.014426 seconds
+  Import took 0.018007 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000596 seconds.
+  path: Assets/hyunhee/custom/head_2.mat
+  artifactKey: Guid(b71c20994271d6748b8f14a1f134bf76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/hyunhee/custom/head_2.mat using Guid(b71c20994271d6748b8f14a1f134bf76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ce44de1d604a64d1274edf0d12a17f8') in 0.013106 seconds
+  Import took 0.016876 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000532 seconds.
+  path: Assets/hyunhee/custom/head_5.mat
+  artifactKey: Guid(6a830d21e2d94564a89905cfe7566909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/hyunhee/custom/head_5.mat using Guid(6a830d21e2d94564a89905cfe7566909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f0b94502d59bef7d4da6b4d03fd1fef') in 0.029422 seconds
+  Import took 0.033679 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002444 seconds.
+  path: Assets/hyunhee/custom/head_1.mat
+  artifactKey: Guid(6a784039e38966d4bbd02e4c8f4e0f18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/hyunhee/custom/head_1.mat using Guid(6a784039e38966d4bbd02e4c8f4e0f18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2abdfaca6383d18e54addee38abdde5b') in 0.043713 seconds
+  Import took 0.048612 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000811 seconds.
+  path: Assets/hyunhee/custom/head_4.mat
+  artifactKey: Guid(369f5d5a4a31e734fb52edc10c13e35e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/hyunhee/custom/head_4.mat using Guid(369f5d5a4a31e734fb52edc10c13e35e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35311e85c696a8f1306e932326130ef0') in 0.017827 seconds
+  Import took 0.021692 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001749 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.31 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.905 seconds
+Platform modules already initialized, skipping
+OnLevelWasLoaded was found on AdaptingEventSystemDragThreshold
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.38 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1280 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.1 MB.
+System memory in use after: 70.2 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 1785.
+Total: 3.484600 ms (FindLiveObjects: 0.204100 ms CreateObjectMapping: 0.054600 ms MarkObjects: 3.174300 ms  DeleteObjects: 0.050000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 68.297714 seconds.
+  path: Assets/hyunhee/custom/hair_2.mat
+  artifactKey: Guid(06231d9f35986b543af19538e7bd6a64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/hyunhee/custom/hair_2.mat using Guid(06231d9f35986b543af19538e7bd6a64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1211365547be647807a4eb0d5074e52') in 0.068275 seconds
+  Import took 0.080387 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.561760 seconds.
+  path: Assets/hyunhee/custom/hair_3.mat
+  artifactKey: Guid(bcda1af9d938fee41a788c316d2393ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/hyunhee/custom/hair_3.mat using Guid(bcda1af9d938fee41a788c316d2393ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00b7d84fea04490ff90e81b7c63e0fb2') in 0.011570 seconds
+  Import took 0.015257 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001709 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.984 seconds
+Platform modules already initialized, skipping
+OnLevelWasLoaded was found on AdaptingEventSystemDragThreshold
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.31 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1280 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.1 MB.
+System memory in use after: 70.2 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 1789.
+Total: 2.571300 ms (FindLiveObjects: 0.301300 ms CreateObjectMapping: 0.034300 ms MarkObjects: 2.192900 ms  DeleteObjects: 0.040900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 374.780508 seconds.
+  path: Assets/hyunhee/custom/hair_2.mat
+  artifactKey: Guid(06231d9f35986b543af19538e7bd6a64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/hyunhee/custom/hair_2.mat using Guid(06231d9f35986b543af19538e7bd6a64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49f1881c5be11124953b7937566f83c9') in 0.090581 seconds
+  Import took 0.101265 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000458 seconds.
+  path: Assets/hyunhee/custom/hair_3.mat
+  artifactKey: Guid(bcda1af9d938fee41a788c316d2393ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/hyunhee/custom/hair_3.mat using Guid(bcda1af9d938fee41a788c316d2393ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fe20b31a8664a4a4e640b4066ed7fb6') in 0.017934 seconds
+  Import took 0.021728 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003459 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.58 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.936 seconds
+Platform modules already initialized, skipping
+OnLevelWasLoaded was found on AdaptingEventSystemDragThreshold
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.35 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1280 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.1 MB.
+System memory in use after: 70.2 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 1793.
+Total: 2.764600 ms (FindLiveObjects: 0.168500 ms CreateObjectMapping: 0.051300 ms MarkObjects: 2.521200 ms  DeleteObjects: 0.021500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002706 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.077 seconds
+Platform modules already initialized, skipping
+OnLevelWasLoaded was found on AdaptingEventSystemDragThreshold
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.74 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1280 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.1 MB.
+System memory in use after: 70.2 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 1796.
+Total: 2.898000 ms (FindLiveObjects: 0.296200 ms CreateObjectMapping: 0.109900 ms MarkObjects: 2.463500 ms  DeleteObjects: 0.026900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002005 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.921 seconds
+Platform modules already initialized, skipping
+OnLevelWasLoaded was found on AdaptingEventSystemDragThreshold
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1280 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.1 MB.
+System memory in use after: 70.2 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 1799.
+Total: 1.930300 ms (FindLiveObjects: 0.241500 ms CreateObjectMapping: 0.068100 ms MarkObjects: 1.563000 ms  DeleteObjects: 0.056300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002042 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.894 seconds
+Platform modules already initialized, skipping
+OnLevelWasLoaded was found on AdaptingEventSystemDragThreshold
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.30 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1280 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.1 MB.
+System memory in use after: 70.2 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 1802.
+Total: 4.214900 ms (FindLiveObjects: 0.338600 ms CreateObjectMapping: 0.047200 ms MarkObjects: 3.811100 ms  DeleteObjects: 0.016900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 816.979381 seconds.
+  path: Assets/hyunhee/custom/Customs.prefab
+  artifactKey: Guid(d960debce672d204f8f1b2057b397ced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/hyunhee/custom/Customs.prefab using Guid(d960debce672d204f8f1b2057b397ced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd91d1a3619db8229f159e332fca1ef11') in 0.077333 seconds
+  Import took 0.089682 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002602 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.897 seconds
+Platform modules already initialized, skipping
+OnLevelWasLoaded was found on AdaptingEventSystemDragThreshold
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.44 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1280 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.2 MB.
+System memory in use after: 70.3 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 1807.
+Total: 2.040100 ms (FindLiveObjects: 0.362100 ms CreateObjectMapping: 0.119000 ms MarkObjects: 1.493300 ms  DeleteObjects: 0.063700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 51.151925 seconds.
+  path: Assets/hyunhee/custom/Customs.prefab
+  artifactKey: Guid(d960debce672d204f8f1b2057b397ced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/hyunhee/custom/Customs.prefab using Guid(d960debce672d204f8f1b2057b397ced) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+0x00007ff720320622 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff720388a92 (Unity) ResolveArtifactV2
+0x00007ff7203e3910 (Unity) ImportToObjects
+0x00007ff7203e2b48 (Unity) AssetImportWorker::Import
+0x00007ff720341fef (Unity) <lambda_77c748ffdfab40a7d87ea62709a69e39>::operator()
+0x00007ff72040d662 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff72040f7c0 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff720412f4e (Unity) asio::io_service::run
+0x00007ff720388fd0 (Unity) RunAssetImportWorkerClientV2
+0x00007ff720389020 (Unity) RunAssetImporterV2
+0x00007ff71f894266 (Unity) Application::InitializeProject
+0x00007ff720214bb2 (Unity) WinMain
+0x00007ff722092a36 (Unity) __scrt_common_main_seh
+0x00007ff988ae7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff989a62651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(d960debce672d204f8f1b2057b397ced) Importer(-1,00000000000000000000000000000000), Assets/hyunhee/custom/Customs.prefab from editor
+Resuming Guid(d960debce672d204f8f1b2057b397ced) Importer(-1,00000000000000000000000000000000) -> 00000000000000000000000000000000 (aborted)
+Diagnostics callstack to track who triggered the sub-import:
+0x00007ff720320622 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff720388a92 (Unity) ResolveArtifactV2
+0x00007ff720383651 (Unity) ProduceArtifactV2
+0x00007ff7202e9b4e (Unity) AssetDatabase::ProduceArtifact
+0x00007ff7202cf208 (Unity) PreviewImporter::GenerateAssetData
+0x00007ff7203e3cd9 (Unity) ImportToObjects
+0x00007ff7203e2b48 (Unity) AssetImportWorker::Import
+0x00007ff720341fef (Unity) <lambda_77c748ffdfab40a7d87ea62709a69e39>::operator()
+0x00007ff72040d662 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff72040f7c0 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff720412f4e (Unity) asio::io_service::run
+0x00007ff720388fd0 (Unity) RunAssetImportWorkerClientV2
+0x00007ff720389020 (Unity) RunAssetImporterV2
+0x00007ff71f894266 (Unity) Application::InitializeProject
+0x00007ff720214bb2 (Unity) WinMain
+0x00007ff722092a36 (Unity) __scrt_common_main_seh
+0x00007ff988ae7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff989a62651 (ntdll) RtlUserThreadStart
+
+Sub-import of Guid(d960debce672d204f8f1b2057b397ced) Importer(-1,00000000000000000000000000000000), Assets/hyunhee/custom/Customs.prefab skipped because a previous one failed already
+ -> (artifact id: 'caabefb67203fc23f0beda4a50483a54') in 1.773152 seconds
+  Import took 1.775625 seconds (was aborted).
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000549 seconds.
+  path: Assets/hyunhee/custom/Customs.prefab
+  artifactKey: Guid(d960debce672d204f8f1b2057b397ced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/hyunhee/custom/Customs.prefab using Guid(d960debce672d204f8f1b2057b397ced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48d7146fb6317b8592434151f32bdb64') in 0.058463 seconds
+  Import took 0.061038 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002015 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.62 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.909 seconds
+Platform modules already initialized, skipping
+OnLevelWasLoaded was found on AdaptingEventSystemDragThreshold
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.34 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1280 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.2 MB.
+System memory in use after: 70.3 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 1811.
+Total: 2.570300 ms (FindLiveObjects: 0.135000 ms CreateObjectMapping: 0.080600 ms MarkObjects: 2.294500 ms  DeleteObjects: 0.058700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002661 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.32 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.874 seconds
+Platform modules already initialized, skipping
+OnLevelWasLoaded was found on AdaptingEventSystemDragThreshold
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.33 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1280 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.2 MB.
+System memory in use after: 70.3 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 1814.
+Total: 2.110000 ms (FindLiveObjects: 0.221300 ms CreateObjectMapping: 0.041100 ms MarkObjects: 1.825100 ms  DeleteObjects: 0.019400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001600 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.37 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.005 seconds
+Platform modules already initialized, skipping
+OnLevelWasLoaded was found on AdaptingEventSystemDragThreshold
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.39 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1280 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.2 MB.
+System memory in use after: 70.3 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 1817.
+Total: 2.877400 ms (FindLiveObjects: 0.320400 ms CreateObjectMapping: 0.219200 ms MarkObjects: 2.314200 ms  DeleteObjects: 0.021100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002529 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.070 seconds
+Platform modules already initialized, skipping
+OnLevelWasLoaded was found on AdaptingEventSystemDragThreshold
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.35 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1280 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.2 MB.
+System memory in use after: 70.3 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 1820.
+Total: 2.801500 ms (FindLiveObjects: 0.616000 ms CreateObjectMapping: 0.102300 ms MarkObjects: 2.059200 ms  DeleteObjects: 0.021800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002336 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.71 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.961 seconds
+Platform modules already initialized, skipping
+OnLevelWasLoaded was found on AdaptingEventSystemDragThreshold
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.62 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1280 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.2 MB.
+System memory in use after: 70.3 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 1823.
+Total: 3.791900 ms (FindLiveObjects: 0.252100 ms CreateObjectMapping: 0.247800 ms MarkObjects: 3.272700 ms  DeleteObjects: 0.018100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002054 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.951 seconds
+Platform modules already initialized, skipping
+OnLevelWasLoaded was found on AdaptingEventSystemDragThreshold
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.43 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1280 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.2 MB.
+System memory in use after: 70.3 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 1826.
+Total: 2.520100 ms (FindLiveObjects: 0.390200 ms CreateObjectMapping: 0.079200 ms MarkObjects: 2.022200 ms  DeleteObjects: 0.026100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002569 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.44 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.337 seconds
+Platform modules already initialized, skipping
+OnLevelWasLoaded was found on AdaptingEventSystemDragThreshold
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.60 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1280 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.2 MB.
+System memory in use after: 70.3 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 1829.
+Total: 2.767500 ms (FindLiveObjects: 0.472100 ms CreateObjectMapping: 0.162000 ms MarkObjects: 2.085900 ms  DeleteObjects: 0.045300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003566 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.31 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.989 seconds
+Platform modules already initialized, skipping
+OnLevelWasLoaded was found on AdaptingEventSystemDragThreshold
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.50 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1280 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.2 MB.
+System memory in use after: 70.3 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 1832.
+Total: 3.024100 ms (FindLiveObjects: 0.273400 ms CreateObjectMapping: 0.060900 ms MarkObjects: 2.633600 ms  DeleteObjects: 0.054600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002653 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.31 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.851 seconds
+Platform modules already initialized, skipping
+OnLevelWasLoaded was found on AdaptingEventSystemDragThreshold
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.30 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1280 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.2 MB.
+System memory in use after: 70.3 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 1835.
+Total: 1.845500 ms (FindLiveObjects: 0.157300 ms CreateObjectMapping: 0.041600 ms MarkObjects: 1.627300 ms  DeleteObjects: 0.017900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002479 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.34 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.084 seconds
+Platform modules already initialized, skipping
+OnLevelWasLoaded was found on AdaptingEventSystemDragThreshold
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.72 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1280 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.2 MB.
+System memory in use after: 70.3 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 1838.
+Total: 2.567900 ms (FindLiveObjects: 0.314400 ms CreateObjectMapping: 0.076100 ms MarkObjects: 2.155500 ms  DeleteObjects: 0.020300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003615 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.31 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.912 seconds
+Platform modules already initialized, skipping
+OnLevelWasLoaded was found on AdaptingEventSystemDragThreshold
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.72 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1280 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.2 MB.
+System memory in use after: 70.3 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 1841.
+Total: 5.448400 ms (FindLiveObjects: 0.162100 ms CreateObjectMapping: 0.065800 ms MarkObjects: 5.152100 ms  DeleteObjects: 0.066200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002052 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.064 seconds
+Platform modules already initialized, skipping
+OnLevelWasLoaded was found on AdaptingEventSystemDragThreshold
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.39 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1280 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.2 MB.
+System memory in use after: 70.3 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 1844.
+Total: 4.344900 ms (FindLiveObjects: 0.291900 ms CreateObjectMapping: 0.047200 ms MarkObjects: 3.964900 ms  DeleteObjects: 0.039000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 1611.074801 seconds.
+  path: Assets/hyunhee/Canvas.prefab
+  artifactKey: Guid(d58e377cb04ef3349a92c6dbb5cedb67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/hyunhee/Canvas.prefab using Guid(d58e377cb04ef3349a92c6dbb5cedb67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6f56df016d1ed547b2a4811f22ae7d6') in 0.148374 seconds
+  Import took 0.152674 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.949903 seconds.
+  path: Assets/hyunhee/image_alt.png
+  artifactKey: Guid(541ac310105362d4baef00ac2be833bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/hyunhee/image_alt.png using Guid(541ac310105362d4baef00ac2be833bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d20c756ac7464b920f5c9df34c92c1d') in 0.040148 seconds
+  Import took 0.044636 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001237 seconds.
+  path: Assets/hyunhee/share_outline.png
+  artifactKey: Guid(147561bbc1c4a26488d3a5ac38508efd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/hyunhee/share_outline.png using Guid(147561bbc1c4a26488d3a5ac38508efd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c1e64ad90eceddd63f9af5d9dfd2fe7') in 0.019521 seconds
+  Import took 0.026350 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000996 seconds.
+  path: Assets/hyunhee/image_alt.png
+  artifactKey: Guid(541ac310105362d4baef00ac2be833bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/hyunhee/image_alt.png using Guid(541ac310105362d4baef00ac2be833bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d20c756ac7464b920f5c9df34c92c1d') in 0.010268 seconds
+  Import took 0.014199 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001931 seconds.
+  path: Assets/hyunhee/share_outline.png
+  artifactKey: Guid(147561bbc1c4a26488d3a5ac38508efd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/hyunhee/share_outline.png using Guid(147561bbc1c4a26488d3a5ac38508efd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c1e64ad90eceddd63f9af5d9dfd2fe7') in 0.008729 seconds
+  Import took 0.012254 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.049954 seconds.
+  path: Assets/hyunhee/image_alt 1.png
+  artifactKey: Guid(cd04dd1b4d7ac2c48acf5bbdd96b66d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/hyunhee/image_alt 1.png using Guid(cd04dd1b4d7ac2c48acf5bbdd96b66d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76a70fb2571ca1405b1ca41570d18667') in 0.009714 seconds
+  Import took 0.014265 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000602 seconds.
+  path: Assets/hyunhee/share_outline 1.png
+  artifactKey: Guid(dc3994315aaa9e44990885552f6d07d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/hyunhee/share_outline 1.png using Guid(dc3994315aaa9e44990885552f6d07d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f609be30cd575bf175c4799f79b25e2') in 0.013582 seconds
+  Import took 0.017077 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 115.800748 seconds.
+  path: Assets/hyunhee/UI
+  artifactKey: Guid(a888898a2eb6ca24e89328b5f2d36b35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/hyunhee/UI using Guid(a888898a2eb6ca24e89328b5f2d36b35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b32bcdf214b0141e0d38b6114a81436f') in 0.004201 seconds
+  Import took 0.007215 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 28.678872 seconds.
+  path: Assets/hyunhee/UI/alt.mat
+  artifactKey: Guid(29bcafd847c6f974e979731801552f8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/hyunhee/UI/alt.mat using Guid(29bcafd847c6f974e979731801552f8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e08c1aaf7e494205009a467dd5f9717') in 0.069473 seconds
+  Import took 0.073430 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 128.967056 seconds.
+  path: Assets/hyunhee/UI/image_alt.png
+  artifactKey: Guid(541ac310105362d4baef00ac2be833bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/hyunhee/UI/image_alt.png using Guid(541ac310105362d4baef00ac2be833bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49d7802f1a718bf475a71332721fb306') in 0.026300 seconds
+  Import took 0.030699 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 213.521742 seconds.
+  path: Assets/hyunhee/UI/Ellipse 16.png
+  artifactKey: Guid(39623cc6693fdc544ae51f63fa03ccc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/hyunhee/UI/Ellipse 16.png using Guid(39623cc6693fdc544ae51f63fa03ccc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf17b4ec23f77783cc1875f3a1f97ce9') in 0.010898 seconds
+  Import took 0.014802 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000511 seconds.
+  path: Assets/hyunhee/UI/Ellipse 17.png
+  artifactKey: Guid(58acd3bcb5fb9b74a85ce6c42535a090) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/hyunhee/UI/Ellipse 17.png using Guid(58acd3bcb5fb9b74a85ce6c42535a090) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8fc83bbf9dc09ea77d17d964689ee8f') in 0.010235 seconds
+  Import took 0.013853 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 50.789370 seconds.
+  path: Assets/hyunhee/UI/Ellipse 16.png
+  artifactKey: Guid(39623cc6693fdc544ae51f63fa03ccc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/hyunhee/UI/Ellipse 16.png using Guid(39623cc6693fdc544ae51f63fa03ccc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fcc37963e5174194c6c7a6afd06de88') in 0.012587 seconds
+  Import took 0.016484 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.102656 seconds.
+  path: Assets/hyunhee/UI/Ellipse 17.png
+  artifactKey: Guid(58acd3bcb5fb9b74a85ce6c42535a090) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/hyunhee/UI/Ellipse 17.png using Guid(58acd3bcb5fb9b74a85ce6c42535a090) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07aa6865cf35b39ec2521bda96689f41') in 0.013666 seconds
+  Import took 0.017148 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 201.803115 seconds.
+  path: Assets/hyunhee/UI/share_outline.png
+  artifactKey: Guid(147561bbc1c4a26488d3a5ac38508efd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/hyunhee/UI/share_outline.png using Guid(147561bbc1c4a26488d3a5ac38508efd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68ed30f356f7d0dd8347610414b5612a') in 0.011558 seconds
+  Import took 0.016155 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002345 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.972 seconds
+Platform modules already initialized, skipping
+OnLevelWasLoaded was found on AdaptingEventSystemDragThreshold
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1280 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.4 MB.
+System memory in use after: 70.5 MB.
+
+Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 1860.
+Total: 2.764800 ms (FindLiveObjects: 0.252800 ms CreateObjectMapping: 0.047500 ms MarkObjects: 2.317000 ms  DeleteObjects: 0.145400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 121.301673 seconds.
+  path: Assets/hyunhee/Canvas.prefab
+  artifactKey: Guid(d58e377cb04ef3349a92c6dbb5cedb67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/hyunhee/Canvas.prefab using Guid(d58e377cb04ef3349a92c6dbb5cedb67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a84c4c4fac015c00222bc3283585dd9a') in 0.117112 seconds
+  Import took 0.130297 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.092187 seconds.
+  path: Assets/hyunhee/Script/TakeScreenshot.cs
+  artifactKey: Guid(8c92b762f9c29f74fb3ec5d2014e1141) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/hyunhee/Script/TakeScreenshot.cs using Guid(8c92b762f9c29f74fb3ec5d2014e1141) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07fb3b3a81e8101edcc34818f84acca1') in 0.023671 seconds
+  Import took 0.034953 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002134 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.42 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.003 seconds
+Platform modules already initialized, skipping
+OnLevelWasLoaded was found on AdaptingEventSystemDragThreshold
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1280 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.4 MB.
+System memory in use after: 70.5 MB.
+
+Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 1863.
+Total: 1.934200 ms (FindLiveObjects: 0.253000 ms CreateObjectMapping: 0.054900 ms MarkObjects: 1.523300 ms  DeleteObjects: 0.100600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001911 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.31 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.960 seconds
+Platform modules already initialized, skipping
+OnLevelWasLoaded was found on AdaptingEventSystemDragThreshold
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.39 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1280 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.4 MB.
+System memory in use after: 70.5 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 1866.
+Total: 3.105000 ms (FindLiveObjects: 0.222000 ms CreateObjectMapping: 0.052800 ms MarkObjects: 2.808400 ms  DeleteObjects: 0.020000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

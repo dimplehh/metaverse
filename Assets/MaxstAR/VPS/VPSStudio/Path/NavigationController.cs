@@ -26,13 +26,13 @@ public class NavigationController : MonoBehaviour
 
     public void UpdateVisibleArrow(GameObject arCameraObject)
     {
-        foreach(GameObject eachArrowItem in arrowItems)
+        foreach (GameObject eachArrowItem in arrowItems)
         {
             Vector3 arCameraPosition = arCameraObject.transform.position;
             Vector3 arrowPosition = eachArrowItem.transform.position;
 
             float distacne = Vector3.Distance(arCameraPosition, arrowPosition);
-            if(distacne > arrowVisibleDistance)
+            if (distacne > arrowVisibleDistance)
             {
                 eachArrowItem.SetActive(false);
             }
@@ -68,7 +68,7 @@ public class NavigationController : MonoBehaviour
             {
                 Debug.Log(resultString);
                 PathModel[] paths = JsonReader.Deserialize<PathModel[]>(resultString);
-                
+
                 //Dictionary<string, List<PathModel>> pathDictionary = new Dictionary<string, List<PathModel>>();
                 //foreach(PathModel eachPathModel in paths)
                 //{
@@ -98,22 +98,22 @@ public class NavigationController : MonoBehaviour
             if(resultString != "")
             {
                 PathModel[] paths = JsonReader.Deserialize<PathModel[]>(resultString);
-                Dictionary<string, List<PathModel>> pathDictionary = new Dictionary<string, List<PathModel>>();
-                foreach(PathModel eachPathModel in paths)
-                {
-                    if(!pathDictionary.ContainsKey(eachPathModel.location))
-                    {
-                        pathDictionary[eachPathModel.location] = new List<PathModel>();
-                    }
-                    List<PathModel> pathList = pathDictionary[eachPathModel.location];
-                    if(pathList == null)
-                    {
-                        pathList = new List<PathModel>();
-                    }
-
-                    pathList.Add(eachPathModel);
-                }
-                success(pathDictionary);
+                //Dictionary<string, List<PathModel>> pathDictionary = new Dictionary<string, List<PathModel>>();
+                //foreach(PathModel eachPathModel in paths)
+                //{
+                //    if(!pathDictionary.ContainsKey(eachPathModel.location))
+                //    {
+                //        pathDictionary[eachPathModel.location] = new List<PathModel>();
+                //    }
+                //    List<PathModel> pathList = pathDictionary[eachPathModel.location];
+                //    if(pathList == null)
+                //    {
+                //        pathList = new List<PathModel>();
+                //    }
+                //
+                //    pathList.Add(eachPathModel);
+                //}
+                success(paths);
             }
             else
             {
@@ -144,7 +144,7 @@ public class NavigationController : MonoBehaviour
     public void RemovePaths()
     {
         arrowItems.Clear();
-        foreach(GameObject pathObject in pathObjects)
+        foreach (GameObject pathObject in pathObjects)
         {
             Destroy(pathObject);
         }
@@ -197,13 +197,13 @@ public class NavigationController : MonoBehaviour
             arrowGameObject.transform.eulerAngles = arrowGameObject.transform.eulerAngles + q.eulerAngles;
             arrowGameObject.transform.parent = naviGameObject.transform;
             arrowGameObject.name = "arrow" + i;
-     
+
             arrowItems.Add(arrowGameObject);
         }
 
         return naviGameObject;
     }
-    
+
     private Vector3 DivideBetweenTwoPoints(in Vector3 from, in Vector3 to, double ratio)
     {
         Vector3 res = new Vector3(0, 0, 0);
